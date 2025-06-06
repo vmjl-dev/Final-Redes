@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de la Luz y Propagación</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./../css/fundamentos-luz.css">
+</head>
+<body>
+    <div class="optic-effect effect-1"></div>
+    <div class="optic-effect effect-2"></div>
+    
+    <div class="container">
+        <header>
+            <h1>Fundamentos de la Luz y Propagación</h1>
+            <p>Principios Físicos para la Comprensión de la Fibra Óptica</p>
+        </header>
+        
+        <div class="content-container">
+            <h2 class="section-title">Propósito de esta Sección</h2>
+            
+            <div class="content-text">
+                <p>Esta sección tiene como objetivo establecer las bases físicas fundamentales sobre la naturaleza y comportamiento de la luz, esenciales para comprender cómo funcionan las fibras ópticas. La transmisión de información a través de la fibra óptica se basa en principios ópticos que gobiernan la propagación de la luz en medios transparentes. Comprender estos principios es crucial para diseñar, implementar y mantener sistemas de comunicación óptica eficientes.</p>
+            </div>
+            
+            <div class="columns-container">
+                <div class="column">
+                    <h2 class="section-title">Naturaleza de la Luz</h2>
+                    
+                    <div class="content-text">
+                        <p>La luz presenta una naturaleza dual, comportándose tanto como onda electromagnética como partícula (fotones). Esta dualidad onda-partícula es fundamental para entender su interacción con la materia:</p>
+                        
+                        <p><span class="highlight">Comportamiento ondulatorio:</span> La luz se propaga como una onda electromagnética transversal, con campos eléctricos y magnéticos oscilantes perpendiculares entre sí y a la dirección de propagación.</p>
+                        
+                        <p><span class="highlight">Comportamiento corpuscular:</span> En fenómenos como el efecto fotoeléctrico, la luz se manifiesta como partículas discretas de energía llamadas fotones, donde cada fotón transporta una energía E = hν (h es la constante de Planck y ν la frecuencia).</p>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <h2 class="section-title">Espectro Electromagnético</h2>
+                    
+                    <div class="spectrum-container">
+                        <div class="spectrum"></div>
+                        <div class="spectrum-label">
+                            <span>Rayos Gamma</span>
+                            <span>Infrarrojo</span>
+                        </div>
+                    </div>
+                    
+                    <div class="content-text">
+                        <p>El espectro electromagnético abarca todas las posibles frecuencias de radiación electromagnética. Para las comunicaciones por fibra óptica, las regiones más relevantes son:</p>
+                        
+                        <p><span class="highlight">Luz visible:</span> Longitudes de onda entre 380 nm (violeta) y 750 nm (rojo). Aunque históricamente importante, su uso en comunicaciones modernas es limitado.</p>
+                        
+                        <p><span class="highlight">Infrarrojo cercano:</span> Entre 800 nm y 1700 nm. Esta es la región más utilizada en telecomunicaciones por fibra óptica debido a:</p>
+                        <ul>
+                            <li>Menor atenuación en el vidrio de sílice</li>
+                            <li>Disponibilidad de fuentes láser y detectores eficientes</li>
+                            <li>Menor dispersión cromática</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="section-title">Principios de Óptica Geométrica</h2>
+            
+            <div class="content-text">
+                <p>La óptica geométrica describe la propagación de la luz mediante rayos, que representan la dirección de propagación de la energía luminosa. Dos fenómenos fundamentales son:</p>
+            </div>
+            
+            <div class="columns-container">
+                <div class="column">
+                    <h3 class="section-title">Reflexión</h3>
+                    
+                    <div class="content-text">
+                        <p>Cuando un rayo de luz incide sobre una superficie que separa dos medios, parte de la luz puede "rebotar" de regreso al medio original. La ley de la reflexión establece:</p>
+                        
+                        <div class="formula-box">
+                            <div class="formula">Ángulo de incidencia (θᵢ) = Ángulo de reflexión (θᵣ)</div>
+                        </div>
+                        
+                        <p>Ambos ángulos se miden respecto a la normal (perpendicular) a la superficie en el punto de incidencia. Este fenómeno es esencial en espejos y en algunas configuraciones de fibra óptica.</p>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <h3 class="section-title">Refracción</h3>
+                    
+                    <div class="content-text">
+                        <p>Cuando la luz pasa de un medio a otro con diferente densidad óptica, cambia de dirección. Este cambio se rige por la <span class="highlight">Ley de Snell-Descartes</span>:</p>
+                        
+                        <div class="formula-box">
+                            <div class="formula">n₁·sin(θ₁) = n₂·sin(θ₂)</div>
+                        </div>
+                        
+                        <p>Donde:</p>
+                        <ul>
+                            <li>n₁ y n₂ son los índices de refracción de los medios</li>
+                            <li>θ₁ es el ángulo de incidencia</li>
+                            <li>θ₂ es el ángulo de refracción</li>
+                        </ul>
+                        <p>La refracción explica fenómenos como la aparente curvatura de un objeto sumergido en agua y es fundamental para el funcionamiento de lentes.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="section-title">Reflexión Interna Total (RIT)</h2>
+            
+            <div class="rit-container">
+                <div class="rit-explanation">
+                    <div class="content-text">
+                        <p>La Reflexión Interna Total es el fenómeno óptico fundamental que hace posible la transmisión de luz a través de fibras ópticas. Ocurre cuando:</p>
+                        
+                        <p><span class="highlight">1.</span> La luz viaja de un medio con mayor índice de refracción a uno con menor índice (n₁ > n₂)</p>
+                        
+                        <p><span class="highlight">2.</span> El ángulo de incidencia es mayor que el ángulo crítico (θᵢ > θ꜀)</p>
+                        
+                        <p>Cuando se cumplen estas condiciones, <span class="highlight">el 100% de la luz se refleja internamente</span> sin pérdidas por refracción al segundo medio.</p>
+                        
+                        <p>El <span class="highlight">ángulo crítico (θ꜀)</span> se calcula mediante:</p>
+                        
+                        <div class="formula-box">
+                            <div class="formula">θ꜀ = arcsin(n₂/n₁)</div>
+                        </div>
+                        
+                        <p>Para la fibra óptica típica (n₁ ≈ 1.48 para núcleo, n₂ ≈ 1.46 para revestimiento), el ángulo crítico es aproximadamente 80°. La RIT permite que la luz quede confinada dentro del núcleo de la fibra, propagándose a lo largo de kilómetros con pérdidas mínimas.</p>
+                    </div>
+                </div>
+                
+                <div class="rit-diagram">
+                    <div class="diagram">
+                        <div class="medium medium-1"></div>
+                        <div class="medium medium-2"></div>
+                        <div class="boundary"></div>
+                        
+                        <div class="ray ray-1"></div>
+                        <div class="ray ray-2"></div>
+                        <div class="ray ray-3"></div>
+                        <div class="ray ray-4"></div>
+                        
+                        <div class="angle" style="top: 15%; left: 40%; transform: rotate(60deg);"></div>
+                        <div class="angle-label" style="top: 10%; left: 50%;">θᵢ</div>
+                        
+                        <div class="angle" style="top: 15%; left: 40%; transform: rotate(0deg);"></div>
+                        <div class="angle-label" style="top: 25%; left: 50%;">θ꜀</div>
+                        
+                        <div class="angle" style="top: 15%; left: 40%; transform: rotate(-40deg);"></div>
+                        <div class="angle-label" style="top: 10%; left: 35%;">θᵣ</div>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="section-title">Índice de Refracción</h2>
+            
+            <div class="content-text">
+                <p>El índice de refracción (n) es una propiedad óptica fundamental de los materiales, definida como:</p>
+                
+                <div class="formula-box">
+                    <div class="formula">n = c / v</div>
+                </div>
+                
+                <p>Donde:</p>
+                <ul>
+                    <li>c = velocidad de la luz en el vacío (≈ 3 × 10⁸ m/s)</li>
+                    <li>v = velocidad de la luz en el material</li>
+                </ul>
+                
+                <p>El índice de refracción determina cómo se propaga la luz en un material:</p>
+                <ul>
+                    <li><span class="highlight">Materiales con n > 1:</span> La luz viaja más lento que en el vacío. Cuanto mayor es n, más se reduce la velocidad.</li>
+                    <li><span class="highlight">Variación con la longitud de onda:</span> n es generalmente mayor para longitudes de onda más cortas (dispersión normal).</li>
+                </ul>
+                
+                <p>En fibra óptica, la diferencia de índices de refracción entre el núcleo y el revestimiento (Δn ≈ 0.01-0.03) es lo que permite la reflexión interna total y el confinamiento de la luz. Esta diferencia se logra mediante la dopación del vidrio de sílice con elementos como germanio (aumenta n) o flúor (disminuye n).</p>
+            </div>
+        </div>
+        
+        <div class="buttons-container">
+            <a href="02-introduccion.html" class="btn btn-retroceder">
+                <i class="fas fa-arrow-left"></i> Retroceder
+            </a>
+            <a href="04-fundamentos-fibra.html" class="btn btn-avanzar">
+                Avanzar <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        
+        <p class="footer-note">©UNEFA 2025. Desarrollado por: Victor Jerez</p>
+    </div>
+
+    <script src="./../js/fundamentos-luz.js"></script>
+</body>
+</html>

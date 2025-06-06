@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atenuación y Dispersión en Fibra Óptica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./../css/atenuacion-dispersion.css">
+</head>
+<body>
+    <div class="optic-effect effect-1"></div>
+    <div class="optic-effect effect-2"></div>
+    
+    <div class="container">
+        <header>
+            <h1>Atenuación y Dispersión</h1>
+            <p>Factores Limitantes en la Transmisión por Fibra Óptica</p>
+        </header>
+        
+        <div class="content-container">
+            <h2 class="section-title">Propósito de esta Sección</h2>
+            
+            <div class="content-text">
+                <p>Esta sección analiza los principales factores que limitan la transmisión de información en sistemas de fibra óptica: la atenuación y la dispersión. Comprender estos fenómenos es esencial para diseñar redes eficientes, determinar la máxima distancia entre repetidores y optimizar el rendimiento de los sistemas de comunicación óptica. Aunque la fibra óptica ofrece ventajas significativas sobre otros medios, estos factores físicos imponen límites prácticos a su capacidad de transmisión.</p>
+            </div>
+            
+            <h2 class="section-title">Atenuación en Fibra Óptica</h2>
+            
+            <div class="attenuation-container">
+                <div class="explanation">
+                    <div class="content-text">
+                        <p><span class="highlight">Definición:</span> La atenuación es la reducción de la potencia de la señal luminosa a medida que se propaga a través de la fibra. Se mide en decibelios por kilómetro (dB/km) y representa la pérdida de energía óptica.</p>
+                        
+                        <p><span class="highlight">Causas principales:</span></p>
+                        <ul class="causes-list">
+                            <li><span class="highlight">Absorción:</span> Conversión de energía luminosa en calor. Causada por impurezas (iones metálicos) y grupos hidroxilo (OH⁻) en el vidrio. El agua residual durante la fabricación crea picos de absorción en 950 nm, 1240 nm y 1380 nm.</li>
+                            <li><span class="highlight">Scattering (Dispersión):</span>
+                                <ul style="margin-top: 10px; padding-left: 20px;">
+                                    <li><span class="highlight">Rayleigh:</span> Dispersión por fluctuaciones microscópicas en la densidad del material. Dominante en longitudes de onda cortas (∝ 1/λ⁴).</li>
+                                    <li><span class="highlight">Mie:</span> Dispersión por imperfecciones geométricas mayores que la longitud de onda (grietas, burbujas).</li>
+                                </ul>
+                            </li>
+                            <li><span class="highlight">Curvaturas:</span>
+                                <ul style="margin-top: 10px; padding-left: 20px;">
+                                    <li><span class="highlight">Microcurvaturas:</span> Pequeñas deformaciones en la interfaz núcleo-revestimiento.</li>
+                                    <li><span class="highlight">Macrocurvaturas:</span> Curvas con radio de curvatura > 10 cm, que causan pérdidas por radiación.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                        <p><span class="highlight">Unidades de medida:</span> dB/km, donde la atenuación α = (10/L) log₁₀(Pᵢ/Pₒ). Valores típicos: 0.2 dB/km en 1550 nm para fibra monomodo estándar.</p>
+                    </div>
+                </div>
+                
+                <div class="visualization">
+                    <div class="fiber-line">
+                        <div class="signal"></div>
+                        <div class="pulse pulse-1"></div>
+                        <div class="pulse pulse-2"></div>
+                        <div class="pulse pulse-3"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="section-title">Dispersión en Fibra Óptica</h2>
+            
+            <div class="content-text">
+                <p><span class="highlight">Definición general:</span> La dispersión es el ensanchamiento temporal de los pulsos ópticos durante su propagación. Este fenómeno limita el ancho de banda porque pulsos adyacentes pueden solaparse, causando errores en la recepción.</p>
+            </div>
+            
+            <div class="dispersion-container">
+                <div class="explanation">
+                    <div class="content-text">
+                        <p><span class="highlight">Dispersión Modal:</span> Exclusiva de fibras multimodo. Ocurre porque diferentes modos (rayos) siguen distintas trayectorias con diferentes longitudes ópticas. Los modos de mayor orden tardan más en llegar al receptor, ensanchando el pulso.</p>
+                        
+                        <p><span class="highlight">Dispersión Cromática:</span> Dependencia de la velocidad de propagación con la longitud de onda. Tiene dos componentes:</p>
+                        <ul class="causes-list">
+                            <li><span class="highlight">Dispersión de material:</span> Propiedad intrínseca del vidrio de sílice. El índice de refracción varía con λ, causando que diferentes componentes espectrales viajen a distintas velocidades.</li>
+                            <li><span class="highlight">Dispersión de guía de onda:</span> Resultado de la distribución de energía entre núcleo y revestimiento, que depende de λ. Más significativa en fibras monomodo con núcleos pequeños.</li>
+                        </ul>
+                        
+                        <p><span class="highlight">Dispersión por Polarización (PMD):</span> En fibras monomodo, la luz puede propagarse en dos modos de polarización ortogonales. Imperfecciones en la fibra causan diferencias en la velocidad de propagación entre estos modos, ensanchando el pulso.</p>
+                    </div>
+                </div>
+                
+                <div class="visualization">
+                    <div class="dispersion-diagram">
+                        <div class="fiber-path"></div>
+                        <div class="input-pulse"></div>
+                        <div class="output-pulse"></div>
+                        <div class="modal-dispersion"></div>
+                        <div class="modal-dispersion"></div>
+                        <div class="modal-dispersion"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="section-title">Impacto en Sistemas de Comunicación</h2>
+            
+            <div class="impact-box">
+                <div class="impact-item">
+                    <div class="impact-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="content-text">
+                        <p><span class="highlight">Ancho de banda reducido:</span> La dispersión limita la tasa de bits máxima. Para un sistema de longitud L, el ancho de banda máximo B ≈ 1/(4σ), donde σ es el ensanchamiento del pulso.</p>
+                    </div>
+                </div>
+                
+                <div class="impact-item">
+                    <div class="impact-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <div class="content-text">
+                        <p><span class="highlight">Distancia limitada:</span> La atenuación determina la máxima distancia entre repetidores o amplificadores. Para una potencia de transmisión Pₜ y sensibilidad del receptor Pᵣ, distancia máxima Lₘₐₓ = (Pₜ - Pᵣ)/α.</p>
+                    </div>
+                </div>
+                
+                <div class="impact-item">
+                    <div class="impact-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="content-text">
+                        <p><span class="highlight">Solución técnica:</span> Se utilizan ventanas de transmisión (850 nm, 1310 nm, 1550 nm) donde la atenuación es mínima. Para dispersión, se emplean fibras DSF (Dispersion Shifted Fiber) o DCF (Dispersion Compensating Fiber).</p>
+                    </div>
+                </div>
+                
+                <div class="impact-item">
+                    <div class="impact-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="content-text">
+                        <p><span class="highlight">Rendimiento típico:</span> Sistemas modernos con fibras monomodo en 1550 nm logran 100 Gbps a 80 km sin regeneración, gracias a baja atenuación (~0.2 dB/km) y dispersión controlada (~17 ps/nm·km).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="buttons-container">
+            <a href="04-fundamentos-fibra.html" class="btn btn-retroceder">
+                <i class="fas fa-arrow-left"></i> Retroceder
+            </a>
+            <a href="06-aplicaciones.html" class="btn btn-avanzar">
+                Avanzar <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        
+        <p class="footer-note">©UNEFA 2025. Desarrollado por: Victor Jerez</p>
+    </div>
+
+    <script src="./../js/atenuacion-dispersion.js"></script>
+</body>
+</html>

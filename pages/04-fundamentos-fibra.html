@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de la Fibra Óptica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./../css/fundamentos-fibra.css">
+</head>
+<body>
+    <div class="optic-effect effect-1"></div>
+    <div class="optic-effect effect-2"></div>
+    
+    <div class="container">
+        <header>
+            <h1>Fundamentos de la Fibra Óptica</h1>
+            <p>Estructura, Tipos y Principios de Funcionamiento</p>
+        </header>
+        
+        <div class="content-container">
+            <h2 class="section-title">Propósito de esta Sección</h2>
+            
+            <div class="content-text">
+                <p>Esta sección tiene como objetivo describir en detalle la estructura física, los diferentes tipos y los principios de funcionamiento de las fibras ópticas. Comprender estos aspectos es fundamental para seleccionar el tipo de fibra adecuado para cada aplicación, diseñar sistemas de comunicación eficientes y resolver problemas en redes ópticas. La fibra óptica ha revolucionado las telecomunicaciones al permitir la transmisión de grandes cantidades de datos a largas distancias con pérdidas mínimas.</p>
+            </div>
+            
+            <h2 class="section-title">Definición y Componentes</h2>
+            
+            <div class="fiber-structure">
+                <div class="fiber-explanation">
+                    <div class="content-text">
+                        <p>Una fibra óptica es un filamento delgado de material dieléctrico (generalmente vidrio de sílice o plástico) diseñado para guiar la luz a lo largo de su longitud mediante el fenómeno de reflexión interna total. Está compuesta por tres capas concéntricas:</p>
+                        
+                        <p><span class="highlight">1. Núcleo (Core):</span> Es la región central por donde se propaga la luz. Fabricado con vidrio de sílice de alta pureza dopado con germanio para aumentar su índice de refracción. Diámetros típicos: 8-10 μm (monomodo), 50-62.5 μm (multimodo).</p>
+                        
+                        <p><span class="highlight">2. Revestimiento (Cladding):</span> Capa que rodea al núcleo, fabricada con sílice puro o dopado con flúor para tener un índice de refracción ligeramente menor (aproximadamente 1-3% menos). Su función es confinar la luz dentro del núcleo mediante reflexión interna total. Diámetro típico: 125 μm.</p>
+                        
+                        <p><span class="highlight">3. Recubrimiento protector (Coating):</span> Capa exterior de material acrílico o polímero que protege la fibra de daños mecánicos, humedad y abrasión. No participa en la guía de luz. Diámetro típico: 250 μm.</p>
+                        
+                        <p>La diferencia de índices de refracción entre núcleo (n₁) y revestimiento (n₂) es crucial para la reflexión interna total (RIT). Cuando n₁ > n₂ y el ángulo de incidencia es mayor que el ángulo crítico, toda la luz se refleja internamente, permitiendo su propagación a lo largo de la fibra con pérdidas mínimas.</p>
+                    </div>
+                </div>
+                
+                <div class="fiber-diagram">
+                    <div class="diagram">
+                        <div class="coating">
+                            <div class="cladding">
+                                <div class="core"></div>
+                            </div>
+                        </div>
+                        <div class="fiber-label" style="top: 20%; left: 75%;">Recubrimiento (Coating)</div>
+                        <div class="fiber-label" style="top: 50%; left: 60%;">Revestimiento (Cladding)</div>
+                        <div class="fiber-label" style="top: 50%; left: 40%;">Núcleo (Core)</div>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="section-title">Tipos de Fibra Óptica</h2>
+            
+            <div class="fiber-types">
+                <div class="fiber-type">
+                    <div class="type-title">Fibra Multimodo (MMF)</div>
+                    <div class="type-icon"><i class="fas fa-project-diagram"></i></div>
+                    <div class="content-text">
+                        <p>Permite la propagación de múltiples modos (rayos) de luz simultáneamente. Diámetro de núcleo mayor (50-62.5 μm), más fácil de conectar pero con mayor dispersión. Ideal para distancias cortas (&lt;2 km).</p>
+                        
+                        <p><span class="highlight">Índice Escalonado (Step-index):</span></p>
+                        <ul>
+                            <li>Perfil de índice abrupto entre núcleo y revestimiento</li>
+                            <li>Diferentes modos siguen diferentes trayectorias (más largas las de mayor ángulo)</li>
+                            <li>Produce dispersión modal significativa</li>
+                            <li>Limitado a distancias cortas y bajas velocidades</li>
+                        </ul>
+                        
+                        <p><span class="highlight">Índice Gradual (Graded-index):</span></p>
+                        <ul>
+                            <li>Índice de refracción disminuye gradualmente del centro al borde del núcleo</li>
+                            <li>Los rayos se curvan suavemente en lugar de rebotar abruptamente</li>
+                            <li>Reduce la dispersión modal porque los rayos periféricos viajan más rápido</li>
+                            <li>Permite mayores distancias y velocidades que step-index</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="fiber-type">
+                    <div class="type-title">Fibra Monomodo (SMF)</div>
+                    <div class="type-icon"><i class="fas fa-wave-square"></i></div>
+                    <div class="content-text">
+                        <p>Núcleo muy pequeño (8-10 μm) que permite solo un modo de propagación. Elimina la dispersión modal, permitiendo mayores distancias y velocidades. Requiere fuentes láser y precisión en conexiones.</p>
+                        
+                        <p><span class="highlight">Características principales:</span></p>
+                        <ul>
+                            <li>Diámetro de núcleo muy pequeño (8-10 μm)</li>
+                            <li>Solo propaga un modo fundamental (única trayectoria)</li>
+                            <li>Elimina la dispersión modal</li>
+                            <li>Permite mayores distancias (hasta 100 km sin repetidores)</li>
+                            <li>Mayor ancho de banda que MMF</li>
+                            <li>Requiere fuentes láser de alta precisión</li>
+                        </ul>
+                        
+                        <p>La propagación en fibra monomodo se produce en un único modo fundamental, que viaja esencialmente a lo largo del eje de la fibra con mínima dispersión. Esto permite tasas de transmisión de terabits por segundo a través de sistemas DWDM (Dense Wavelength Division Multiplexing).</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="section-title">Modos de Propagación</h2>
+            
+            <div class="content-text">
+                <p>Los modos de propagación son las diferentes trayectorias que puede seguir la luz dentro de la fibra óptica. Cada modo corresponde a una solución de las ecuaciones de Maxwell para las condiciones de contorno de la fibra. La cantidad de modos depende del diámetro del núcleo, la diferencia de índices y la longitud de onda.</p>
+            </div>
+            
+            <div class="propagation-container">
+                <div class="propagation">
+                    <h3 class="section-title">Multimodo - Índice Escalonado</h3>
+                    <div class="propagation-diagram">
+                        <div class="step-index">
+                            <div class="step-index-ray"></div>
+                            <div class="step-index-ray"></div>
+                            <div class="step-index-ray"></div>
+                        </div>
+                    </div>
+                    <div class="content-text">
+                        <p>Los rayos de luz siguen trayectorias en zigzag con diferentes longitudes. Los rayos con mayor ángulo recorren distancias mayores que los axiales, causando dispersión modal. Esto limita el ancho de banda y la distancia máxima.</p>
+                    </div>
+                </div>
+                
+                <div class="propagation">
+                    <h3 class="section-title">Multimodo - Índice Gradual</h3>
+                    <div class="propagation-diagram">
+                        <div class="graded-index">
+                            <div class="graded-index-ray"></div>
+                        </div>
+                    </div>
+                    <div class="content-text">
+                        <p>El índice decreciente hacia los bordes curva gradualmente los rayos. Los rayos periféricos viajan más rápido al encontrarse con menor índice de refracción, compensando las diferencias de trayectoria y reduciendo la dispersión modal.</p>
+                    </div>
+                </div>
+                
+                <div class="propagation">
+                    <h3 class="section-title">Monomodo</h3>
+                    <div class="propagation-diagram">
+                        <div class="single-mode">
+                            <div class="single-mode-ray"></div>
+                        </div>
+                    </div>
+                    <div class="content-text">
+                        <p>Solo se propaga un modo fundamental, esencialmente a lo largo del eje de la fibra. Al no haber múltiples trayectorias, se elimina la dispersión modal, permitiendo mayores distancias y velocidades de transmisión.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="section-title">Ventajas y Desventajas Comparativas</h2>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Fibra Multimodo (MMF)</th>
+                        <th>Fibra Monomodo (SMF)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Diámetro del núcleo</td>
+                        <td>50-62.5 μm</td>
+                        <td>8-10 μm</td>
+                    </tr>
+                    <tr>
+                        <td>Modos de propagación</td>
+                        <td>Múltiples (cientos)</td>
+                        <td>Uno</td>
+                    </tr>
+                    <tr>
+                        <td>Fuente luminosa</td>
+                        <td>LED o láser VCSEL</td>
+                        <td>Láser de alta precisión</td>
+                    </tr>
+                    <tr>
+                        <td>Dispersión modal</td>
+                        <td>Significativa</td>
+                        <td>Inexistente</td>
+                    </tr>
+                    <tr>
+                        <td>Distancia máxima típica</td>
+                        <td>Hasta 2 km</td>
+                        <td>Hasta 100 km</td>
+                    </tr>
+                    <tr>
+                        <td>Ancho de banda</td>
+                        <td>Hasta 10 Gbps (OM4)</td>
+                        <td>Terabits por segundo (con DWDM)</td>
+                    </tr>
+                    <tr>
+                        <td>Costo</td>
+                        <td>
+                            <div class="pro">Transceptores más económicos</div>
+                            <div class="con">Mayor costo por ancho de banda</div>
+                        </td>
+                        <td>
+                            <div class="con">Transceptores más costosos</div>
+                            <div class="pro">Menor costo por ancho de banda</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Facilidad de instalación</td>
+                        <td>
+                            <div class="pro">Más fácil de conectar</div>
+                            <div class="pro">Tolerancia a desalineaciones</div>
+                        </td>
+                        <td>
+                            <div class="con">Requiere alta precisión</div>
+                            <div class="con">Sensibilidad a desalineaciones</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Aplicaciones típicas</td>
+                        <td>Redes LAN, centros de datos, CCTV</td>
+                        <td>Telecomunicaciones de larga distancia, redes troncales, FTTH</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="buttons-container">
+            <a href="03-fundamentos-luz.html" class="btn btn-retroceder">
+                <i class="fas fa-arrow-left"></i> Retroceder
+            </a>
+            <a href="05-atenuacion-dispersion.html" class="btn btn-avanzar">
+                Avanzar <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        
+        <p class="footer-note">©UNEFA 2025. Desarrollado por: Victor Jerez</p>
+    </div>
+
+    <script src="./../js/fundamentos-fibra.js"></script>
+</body>
+</html>
